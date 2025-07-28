@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: healthy-search-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn config.wsgi:application
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: config.settings
+      - key: PYTHON_VERSION
+        value: 3.9
+      - key: SECRET_KEY
+        value: "django-insecure-nd5n^_pn6w!d39=0eiu*7485*o^ir$gt&q994bf1jv6%daa0a9"
+      - key: YELP_API_KEY
+        value: "43bS0_lySpfqS8hYEojSNxlpwsOqDupQTGWWVWOl2ty71xKhQuFYd4nq1tjBxpEbMvR3uxTFNp_TodiQaZnAUyo00C55FhwlAg94ILMXTZgtqKIo_dleT0i3_HV6aHYx"
