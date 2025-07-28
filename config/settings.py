@@ -39,7 +39,7 @@ RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 ALLOWED_HOSTS = ['localhost']
 if RENDER_EXTERNAL_HOSTNAME:
     ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
-    
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Application definition
@@ -70,6 +70,14 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+] 
+
+CORS_ALLOWED_ORIGINS = [
+    "https://healthysearch-1.onrender.com", 
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://healthysearch-1.onrender.com",
 ]
 
 ROOT_URLCONF = 'config.urls'
