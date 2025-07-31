@@ -8,7 +8,7 @@ Healthy Search is my first full-stack web application, with Django (backend) and
 
 ## Live Demo: 
 - Frontend: [https://healthysearch-1.onrender.com/]
-- Backend/API: [https://[healthysearch.onrender.com]
+- Backend/API: [https://healthysearch.onrender.com]
 
 ## Tech Stack: 
 - Django + Django REST Framework
