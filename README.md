@@ -6,6 +6,16 @@ Healthy Search is my first full-stack web application, with Django (backend) and
 - Filters for sugar-free, keto, and healthy items
 - Responsive UI
 
+## Live Demo: 
+- Frontend: [https://healthysearch-1.onrender.com/]
+- Backend/API: [https://[healthysearch.onrender.com]
+
+## Tech Stack: 
+- Django + Django REST Framework
+- React + Tailwind
+- Yelp Fusion API
+- Render for deployment
+
 ## Installation: 
 ```bash
 # Backend
