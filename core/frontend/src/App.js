@@ -40,7 +40,7 @@ const searchRestaurants = async (customLat = null, customLon = null, customLocat
   setError("");
   setResults([]);
 
-  let url = "http://localhost:8000/search/api/search/";
+  let url = "https://healthysearch.onrender.com/search/api/search/";
 
   if (customLat !== null && customLon !== null) {
     url += `?lat=${customLat}&lon=${customLon}`;
@@ -68,7 +68,7 @@ const searchRestaurants = async (customLat = null, customLon = null, customLocat
 
   return (
     <div className ='container'>
-      <h1>Healthy Search</h1>
+      <h1>HealthySearch</h1>
 
       <form onSubmit={handleSubmit} style={{ marginBottom: "1rem" }}>
         <input
