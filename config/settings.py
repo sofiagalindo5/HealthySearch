@@ -32,11 +32,11 @@ SECRET_KEY = 'django-insecure-nd5n^_pn6w!d39=0eiu*7485*o^ir$gt&q994bf1jv6%daa0a9
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = False
+DEBUG = True
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 
-ALLOWED_HOSTS = ['localhost', 'healthysearch.onrender.com']
+ALLOWED_HOSTS = ['*']
 if RENDER_EXTERNAL_HOSTNAME:
     ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
